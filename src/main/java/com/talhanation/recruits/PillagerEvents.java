@@ -91,6 +91,7 @@ public class PillagerEvents {
                     }
                 }
             }
+            return;
         }
 
         if (illager instanceof Vindicator vindicator && RecruitsServerConfig.VindicatorSpawnItems.get()) {
@@ -103,6 +104,7 @@ public class PillagerEvents {
                 vindicator.setItemInHand(InteractionHand.MAIN_HAND, Items.IRON_SWORD.getDefaultInstance());
                 vindicator.setItemInHand(InteractionHand.OFF_HAND, Items.SHIELD.getDefaultInstance());
             }
+            return;
         }
 
         // ------------------------------------
